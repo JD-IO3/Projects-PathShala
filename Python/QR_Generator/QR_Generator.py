@@ -8,7 +8,7 @@ set_default_color_theme('blue')
 
 root = CTk()
 root.title("QR Generator")
-root.geometry('500x500')
+root.geometry('1000x1000')
 
 showimg = None
 
@@ -30,7 +30,7 @@ inp = CTkEntry(master=root)
 inp.place(relx=0.5, rely=0.1, anchor=CENTER)
 
 imglabel = CTkLabel(master=root, text="")
-imglabel.place(relx=0.5, rely=0.6, anchor = CENTER)
+imglabel.pack(pady=200, anchor = CENTER)
 
 btn = CTkButton(master=root, text="Generate", command=generateqr, ) #*hex also works..
 btn.place(relx=0.5, rely=0.2, anchor=CENTER)
